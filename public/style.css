@@ -52,6 +52,19 @@ nav div div button{
     align-items: center;
 }
 
+.items{
+    display: flex;
+    align-items: center;
+}
+
+input:checked+li {
+    text-decoration: line-through;
+    /* background-color: rgb(77, 252, 179); */
+}
+input[type="checkbox"] {
+
+}
+
 h1{
     color: #334e8a;
     /* background-color: #d3d3d3; */
@@ -59,6 +72,7 @@ h1{
 h3{
     text-align: center;
     color: #334e8a;
+    /* margin: 50px; */
 }
 h3 a{
     color: #334e8a;
@@ -82,6 +96,7 @@ input{
     background-color: #ffffff;
     color: #334e8a;
 }
+
 button{
     border: 0;
     margin: 10px;
@@ -102,4 +117,7 @@ hr{
     height: 1px;
     margin: 25px 50px;
     background-color: rgb(209, 209, 209);
+}
+::placeholder{
+    color: #334e8a;
 }
