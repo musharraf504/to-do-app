@@ -1,8 +1,6 @@
 // reusable file package for Date, day, and year
 
-module.exports.getDate = getDate;
-
-function getDate() {
+exports.getDate = function() {
 
   const today = new Date();
 
@@ -13,14 +11,11 @@ function getDate() {
     // year: 'numeric'
   };
 
-  const day = today.toLocaleDateString("en-US", options);
+  return today.toLocaleDateString("en-US", options);
 
-  return day;
 }
 
-module.exports.getDay = getDay;
-
-function getDay() {
+exports.getDay = function() {
 
     const today = new Date();
 
@@ -28,14 +23,10 @@ function getDay() {
       weekday: 'long'
     };
   
-    const day = today.toLocaleDateString("en-US", options);
-  
-    return day;
+    return today.toLocaleDateString("en-US", options);
   }
 
-  module.exports.getYear = getYear;
-
-  function getYear() {
+exports.getYear = function() {
 
     const today = new Date();
   
@@ -46,7 +37,5 @@ function getDay() {
       year: 'numeric'
     };
   
-    const day = today.toLocaleDateString("en-US", options);
-  
-    return day;
+    return today.toLocaleDateString("en-US", options);
   }
