@@ -6,6 +6,17 @@
     background-color: #e0e0e0;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #334e8a;
+}
+::-webkit-scrollbar-thumb{
+    background: #263b69;
+    border-radius: 10px;
+}
+
 nav div{
     display: flex;
     justify-content: space-between;
@@ -59,10 +70,6 @@ nav div div button{
 
 input:checked+li {
     text-decoration: line-through;
-    /* background-color: rgb(77, 252, 179); */
-}
-input[type="checkbox"] {
-
 }
 
 h1{
